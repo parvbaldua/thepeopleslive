@@ -2,7 +2,7 @@
   "id": "https://thepeopleslive.vercel.app/",
   "name": "पिपरिया पीपुल्स - हाइपरलोकल न्यूज़",
   "short_name": "पिपरिया पीपुल्स",
-  "description": "पिपरिया की धड़कन, देश की खबर",
+  "description": "खबर जो मायने रखे",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
