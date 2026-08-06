@@ -4,7 +4,10 @@
     "target": {
       "namespace": "android_app",
       "package_name": "app.vercel.thepeopleslive.twa",
-      "sha256_cert_fingerprints": ["2B:B5:41:DE:8E:87:DC:FE:6E:94:48:BD:56:4B:E6:3D:DE:00:AD:7F:0C:5C:BE:9B:0B:B3:39:84:38:A7:49:6A"]
+      "sha256_cert_fingerprints": [
+        "E4:0F:29:DD:CE:27:EA:E7:97:14:79:AF:E1:0A:DA:46:83:21:ED:0B:91:51:71:4C:5A:A7:B4:83:62:67:9B:8F",
+        "2B:B5:41:DE:8E:87:DC:FE:6E:94:48:BD:56:4B:E6:3D:DE:00:AD:7F:0C:5C:BE:9B:0B:B3:39:84:38:A7:49:6A"
+      ]
     }
   }
 ]
