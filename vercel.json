@@ -3,6 +3,14 @@
   "cleanUrls": true,
   "routes": [
     {
+      "src": "/.well-known/assetlinks.json",
+      "headers": {
+        "content-type": "application/json",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "dest": "/.well-known/assetlinks.json"
+    },
+    {
       "src": "/sw.js",
       "headers": { "cache-control": "public, max-age=0, must-revalidate" },
       "dest": "/sw.js"
