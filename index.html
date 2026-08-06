@@ -917,13 +917,10 @@
                   <span className="material-symbols-outlined text-2xl">menu</span>
                 </button>
                 <div 
-                  onClick={() => setIsAdminOpen(true)} 
-                  role="button"
-                  tabIndex={0}
-                  className="flex flex-col items-center cursor-pointer group select-none active:opacity-80 transition-opacity" 
-                  title="एडमिन पैनल खोलें (PIN: 9064)"
+                  onClick={() => { setActiveTab('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  className="flex flex-col items-center cursor-pointer select-none active:opacity-80 transition-opacity" 
                 >
-                  <Logo onClick={() => setIsAdminOpen(true)} variant="light" className="h-8 w-auto object-contain transition-transform group-hover:scale-105" />
+                  <Logo variant="light" className="h-8 w-auto object-contain" />
                   <span className="text-[7.5px] text-slate-600 font-semibold tracking-normal whitespace-nowrap mt-0.5 text-center font-hindi">
                     खबर जो मायने रखे
                   </span>
@@ -1736,16 +1733,6 @@
                       <span>हमारे बारे में (About Us)</span>
                     </button>
 
-                    <button 
-                      onClick={() => {
-                        setIsAdminOpen(true);
-                        setIsDrawerOpen(false);
-                      }}
-                      className="w-full flex items-center gap-2.5 px-3 py-2 text-xs font-bold text-slate-700 hover:bg-slate-100/80 hover:text-slate-900 rounded-xl transition-colors font-sidebarTitle"
-                    >
-                      <span className="material-symbols-outlined text-base text-primary">admin_panel_settings</span>
-                      <span>🔐 एडमिन लॉगिन (Admin Panel)</span>
-                    </button>
                   </div>
                 </div>
 
