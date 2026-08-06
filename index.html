@@ -890,25 +890,15 @@
 
       return (
         <div className="max-w-[440px] mx-auto min-h-screen bg-background relative shadow-2xl pb-16">
-          {/* Professional Animated Splash Intro Screen */}
+          {/* Clean Direct Splash Intro Screen */}
           {showSplash && (
-            <div className={`fixed inset-0 z-[200] bg-white flex flex-col items-center justify-between py-14 px-6 transition-all duration-500 ease-out max-w-[440px] mx-auto ${splashFading ? 'opacity-0 scale-105 pointer-events-none' : 'opacity-100 scale-100'}`}>
-              <div className="flex-1 flex flex-col items-center justify-center relative w-full text-center">
-                {/* Direct High-Res Logo Image (0ms Instant Frame 1 Render) */}
-                <div className="animate-splash-pop flex flex-col items-center select-none">
-                  <img 
-                    src="IMG_5473.PNG" 
-                    alt="पिपरिया पीपुल्स" 
-                    className="h-36 w-auto max-w-[340px] object-contain drop-shadow-md transition-transform scale-105" 
-                  />
-                </div>
-              </div>
-
-              {/* Subtle Minimal Loading Dots */}
-              <div className="flex items-center gap-2 mb-6">
-                <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
-                <span className="w-2 h-2 rounded-full bg-primary/60 animate-pulse"></span>
-                <span className="w-2 h-2 rounded-full bg-primary/30"></span>
+            <div className={`fixed inset-0 z-[200] bg-white flex flex-col items-center justify-center py-14 px-6 transition-opacity duration-300 ease-out max-w-[440px] mx-auto ${splashFading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+              <div className="flex flex-col items-center justify-center select-none text-center">
+                <img 
+                  src="IMG_5473.PNG" 
+                  alt="पिपरिया पीपुल्स" 
+                  className="h-36 w-auto max-w-[340px] object-contain drop-shadow-sm" 
+                />
               </div>
             </div>
           )}
