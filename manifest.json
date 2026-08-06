@@ -1,24 +1,50 @@
 {
-  "name": "पिपरिया पीपुल्स - hyperlocal news",
+  "id": "/",
+  "name": "पिपरिया पीपुल्स - हाइपरलोकल न्यूज़",
   "short_name": "पिपरिया पीपुल्स",
   "description": "पिपरिया की धड़कन, देश की खबर",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#FAFAF8",
   "theme_color": "#FF6D00",
   "orientation": "portrait",
+  "categories": ["news", "magazines"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "IMG_5473.PNG",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "IMG_5473.PNG",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "IMG_5473.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "IMG_5473.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "पिपरिया पीपुल्स होम फ़ीड"
+    },
+    {
+      "src": "IMG_5473.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "पिपरिया पीपुल्स मुख्य स्क्रीन"
     }
   ]
 }
