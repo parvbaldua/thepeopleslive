@@ -1,5 +1,5 @@
 {
-  "id": "/",
+  "id": "https://thepeopleslive.vercel.app/",
   "name": "पिपरिया पीपुल्स - हाइपरलोकल न्यूज़",
   "short_name": "पिपरिया पीपुल्स",
   "description": "पिपरिया की धड़कन, देश की खबर",
@@ -13,19 +13,19 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -33,14 +33,14 @@
   ],
   "screenshots": [
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "पिपरिया पीपुल्स होम फ़ीड"
     },
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "form_factor": "wide",
