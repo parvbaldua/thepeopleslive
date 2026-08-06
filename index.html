@@ -629,8 +629,8 @@
 
         const splashTimer = setTimeout(() => {
           setSplashFading(true);
-          setTimeout(() => setShowSplash(false), 600);
-        }, 2700);
+          setTimeout(() => setShowSplash(false), 400);
+        }, 1200);
 
         if ('speechSynthesis' in window) {
           window.speechSynthesis.getVoices();
