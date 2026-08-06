@@ -1,0 +1,24 @@
+{
+  "name": "पिपरिया पीपुल्स - hyperlocal news",
+  "short_name": "पिपरिया पीपुल्स",
+  "description": "पिपरिया की धड़कन, देश की खबर",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#FF6D00",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "IMG_5473.PNG",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "IMG_5473.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
