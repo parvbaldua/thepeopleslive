@@ -383,69 +383,17 @@
 
     // --- Components ---
 
-    const logoCache = {};
-
     function Logo({ variant = 'dark', className = 'h-9 w-auto', onClick }) {
-      const [logoSrc, setLogoSrc] = useState(null);
-      const srcFile = variant === 'dark' ? 'IMG_5467.PNG' : 'IMG_5473.PNG';
-      const cacheKey = srcFile + '_' + variant;
-
-      useEffect(() => {
-        if (logoCache[cacheKey]) {
-          setLogoSrc(logoCache[cacheKey]);
-          return;
-        }
-
-        const img = new Image();
-        img.crossOrigin = 'anonymous';
-        img.src = srcFile;
-        img.onload = () => {
-          const canvas = document.createElement('canvas');
-          const ctx = canvas.getContext('2d');
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0);
-
-          const imgData = ctx.getImageData(0, 0, img.width, img.height);
-          const data = imgData.data;
-
-          const minX = 2100, maxX = 6450, minY = 1000, maxY = 2850;
-          const cropW = maxX - minX;
-          const cropH = maxY - minY;
-
-          for (let i = 0; i < data.length; i += 4) {
-            const r = data[i], g = data[i+1], b = data[i+2];
-            if (r > 235 && g > 235 && b > 235) {
-              data[i+3] = 0;
-            }
-          }
-
-          ctx.putImageData(imgData, 0, 0);
-
-          const croppedCanvas = document.createElement('canvas');
-          croppedCanvas.width = cropW;
-          croppedCanvas.height = cropH;
-          const croppedCtx = croppedCanvas.getContext('2d');
-          croppedCtx.drawImage(canvas, minX, minY, cropW, cropH, 0, 0, cropW, cropH);
-
-          const outUrl = croppedCanvas.toDataURL('image/png');
-          logoCache[cacheKey] = outUrl;
-          setLogoSrc(outUrl);
-        };
-      }, [variant]);
-
-      if (!logoSrc) {
-        return (
-          <img 
-            src={srcFile} 
-            alt="पिपरिया पीपुल्स" 
-            className={className} 
-            onClick={onClick} 
-          />
-        );
-      }
-
-      return <img src={logoSrc} alt="पिपरिया पीपुल्स" className={className} onClick={onClick} />;
+      const srcFile = variant === 'dark' ? 'app_icon.png' : 'IMG_5473.PNG';
+      return (
+        <img 
+          src={srcFile} 
+          alt="पिपरिया पीपुल्स" 
+          className={`${className} object-contain`} 
+          onClick={onClick} 
+          onError={(e) => { e.target.src = 'app_icon.png'; }}
+        />
+      );
     }
 
     function App() {
