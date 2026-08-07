@@ -3,6 +3,10 @@
   "cleanUrls": true,
   "routes": [
     {
+      "src": "/googlee39b64df81286b8a.html",
+      "dest": "/googlee39b64df81286b8a.html"
+    },
+    {
       "src": "/.well-known/assetlinks.json",
       "headers": {
         "content-type": "application/json",
