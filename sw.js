@@ -1,8 +1,9 @@
-const CACHE_NAME = 'pipariya-peoples-v5';
+const CACHE_NAME = 'pipariya-peoples-v6';
 const ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/clean_logo.png',
   '/app_icon_192.png',
   '/app_icon_512.png',
   '/app_icon.png',
