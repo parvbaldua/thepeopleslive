@@ -384,14 +384,18 @@
     // --- Components ---
 
     function Logo({ variant = 'dark', className = 'h-9 w-auto', onClick }) {
-      const srcFile = variant === 'dark' ? 'app_icon.png' : 'IMG_5473.PNG';
+      const srcFile = variant === 'dark' ? '/app_icon.png' : '/IMG_5473.PNG';
       return (
         <img 
           src={srcFile} 
           alt="पिपरिया पीपुल्स" 
-          className={`${className} object-contain`} 
+          className={`${className} object-contain min-h-[28px] shrink-0`} 
           onClick={onClick} 
-          onError={(e) => { e.target.src = 'app_icon.png'; }}
+          onError={(e) => {
+            if (!e.target.src.includes('app_icon.png')) {
+              e.target.src = '/app_icon.png';
+            }
+          }}
         />
       );
     }
