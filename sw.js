@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pipariya-peoples-v8';
+const CACHE_NAME = 'pipariya-peoples-v9';
 const ASSETS = [
   '/',
   '/index.html',

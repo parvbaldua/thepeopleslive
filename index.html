@@ -384,12 +384,18 @@
     // --- Components ---
 
     function Logo({ variant = 'dark', className = 'h-9 w-auto', onClick }) {
+      const srcFile = variant === 'light' ? '/clean_logo.png' : '/clean_logo.png';
       return (
         <img 
-          src="/app_icon.png" 
+          src={srcFile} 
           alt="पिपरिया पीपुल्स" 
           className={`${className} object-contain`} 
           onClick={onClick} 
+          onError={(e) => {
+            if (!e.target.src.includes('clean_logo.png')) {
+              e.target.src = '/clean_logo.png';
+            }
+          }}
         />
       );
     }
