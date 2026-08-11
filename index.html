@@ -1731,6 +1731,15 @@
                       <span className="material-symbols-outlined text-base text-primary">info</span>
                       <span>हमारे बारे में (About Us)</span>
                     </button>
+                    <a 
+                      href="/privacy.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center gap-2.5 px-3 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 rounded-xl transition-colors font-sidebarTitle"
+                    >
+                      <span className="material-symbols-outlined text-base text-primary">shield</span>
+                      <span>गोपनीयता नीति (Privacy Policy)</span>
+                    </a>
 
                   </div>
                 </div>
@@ -1793,11 +1802,16 @@
                 <p className="text-xs text-slate-600 leading-relaxed">
                   पिपरिया शहर, नर्मदापुरम एवं आसपास के क्षेत्रों का नंबर 1 हाइपरलोकल डिजिटल समाचार नेटवर्क। हमारा उद्देश्य हर नागरिक तक निष्पक्ष और ताज़ा खबरें पहुँचाना है।
                 </p>
-                <div className="text-[11px] text-slate-500 border-t border-neutral-100 pt-3">
-                  <p>संपादक: राजवर्धन बल्दुआ</p>
-                  <p>व्हाट्सएप / संपर्क: +91 9425409064</p>
-                  <p>ईमेल: rajvardhanbaldua@gmail.com</p>
-                </div>
+                  <div className="text-[11px] text-slate-500 border-t border-neutral-100 pt-3">
+                    <p>संपादक: राजवर्धन बल्दुआ</p>
+                    <p>व्हाट्सएप / संपर्क: +91 9425409064</p>
+                    <p>ईमेल: rajvardhanbaldua@gmail.com</p>
+                    <p className="mt-1">
+                      <a href="/privacy.html" target="_blank" className="text-primary font-bold hover:underline">
+                        गोपनीयता नीति (Privacy Policy)
+                      </a>
+                    </p>
+                  </div>
                 <button 
                   onClick={() => setIsAboutOpen(false)} 
                   className="w-full bg-slate-900 text-white font-bold py-2 rounded-xl text-xs"
