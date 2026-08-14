@@ -1,14 +1,12 @@
 [
   {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
+    "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
       "package_name": "com.pipariyapeoples.app",
-      "sha256_cert_fingerprints": [
-        "F4:EB:C9:19:D7:92:7C:AB:14:D2:78:66:34:70:C8:E1:C0:31:EA:28:12:6C:5B:2D:66:6C:99:97:83:0B:52:D7"
-      ]
+      "sha256_cert_fingerprints":
+        ["1A:7B:41:64:F3:0A:18:9C:66:11:EC:29:8A:84:39:34:B4:FD:19:FE:30:AC:87:72:CA:F3:AC:BE:D6:B6:C2:35",
+         "F4:EB:C9:19:D7:92:7C:AB:14:D2:78:66:34:70:C8:E1:C0:31:EA:28:12:6C:5B:2D:66:6C:99:97:83:0B:52:D7"]
     }
   }
 ]
